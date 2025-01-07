@@ -30,8 +30,10 @@ LdrpHandleTlsData函数主要用于解决sRDI中静态TLS问题
 
 ## 编译
 
+```bash
 zig build -Dcpu=generic  -Doptimize=ReleaseSmall -Dtarget=x86-windows
 zig build -Dcpu=generic  -Doptimize=ReleaseSmall -Dtarget=x86_64-windows
+```
 
 其中generic是屏蔽向量相关指令防止出现兼容性问题
 
